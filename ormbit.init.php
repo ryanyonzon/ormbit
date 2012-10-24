@@ -11,16 +11,16 @@
  * http://www.gnu.org/licenses/gpl.html
  */
 
-define('ROOT_DIR', __DIR__);
-require(ROOT_DIR . '/configs/environment.config.php'); // environment configuration
+define('OB_ROOT_DIR', __DIR__);
+require(OB_ROOT_DIR . '/configs/environment.config.php'); // environment configuration
 
 // check the database configuration file
-if (!file_exists(CONFIG_DIR . 'database.config.php')) {
+if (!file_exists(OB_CONFIG_DIR . 'database.config.php')) {
 	die("ORMbit Error: Unable to load database configuration file (configs/database.config.php).\n");
 }
 
 // ...continue
-require(CONFIG_DIR . 'database.config.php'); // database configuration
-require(CLASSES_DIR . 'ofloader.class.php'); // autoloader class
+require(OB_CONFIG_DIR . 'database.config.php'); // database configuration
+require(OB_CLASSES_DIR . 'obautoloader.class.php'); // autoloader class
 
 // -EOF-

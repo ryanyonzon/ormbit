@@ -5,7 +5,7 @@
  *
  * Orinoco Framework is a lightweight MVC framework for PHP, https://github.com/rawswift/Orinoco-Framework
  *  
- * Copyright (c) 2012 Ryan Yonzon, <rawswift@gmail.com>
+ * Copyright (c) 2008-2012 Ryan Yonzon, <rawswift@gmail.com>
  * Dual licensed under the MIT and GPL licenses:
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.gnu.org/licenses/gpl.html

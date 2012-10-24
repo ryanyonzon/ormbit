@@ -5,7 +5,7 @@
  *
  * Orinoco Framework is a lightweight MVC framework for PHP, https://github.com/rawswift/Orinoco-Framework
  *  
- * Copyright (c) 2012 Ryan Yonzon, <rawswift@gmail.com>
+ * Copyright (c) 2008-2012 Ryan Yonzon, <rawswift@gmail.com>
  * Dual licensed under the MIT and GPL licenses:
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.gnu.org/licenses/gpl.html
@@ -22,8 +22,8 @@ class Database {
 	 * establish database connection using selected database adapter
 	 */
 	protected function databaseConnect() {
-		$_adapter =  DB_ADAPTER;
-		$this->_database = new $_adapter(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME); 
+		$_adapter =  OB_DB_ADAPTER;
+		$this->_database = new $_adapter(OB_DB_HOST, OB_DB_USERNAME, OB_DB_PASSWORD, OB_DB_NAME);
 			if(!$this->_database) {
 				throw new Exception('Cannot establish a database connection.');			
 			}
